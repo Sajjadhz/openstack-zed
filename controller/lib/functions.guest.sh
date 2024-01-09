@@ -19,7 +19,7 @@ function source_deploy {
         return 0
     fi
     if mountpoint -q /vagrant; then
-        source "$CONFIG_DIR/deploy.vagrant"
+        source "$CONFIG_DIR/deploy.stack"
     else
         source "$CONFIG_DIR/deploy.stack"
     fi
